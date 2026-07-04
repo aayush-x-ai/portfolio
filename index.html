@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="assets/profile.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Aayush Sahu - Aspiring AI & Machine Learning Engineer Portfolio. Building innovative AI solutions for real-world problems." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Aayush Sahu | AI & ML Engineer Portfolio</title>
+  </head>
+  <body>
+    <canvas id="particle-bg" class="canvas-container" aria-hidden="true"></canvas>
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-dot"></div>
+
+    <main class="layout-wrapper">
+      <section id="hero" class="hero-section">
+        <div class="mesh-glow hero-glow"></div>
+        <div class="hero-container">
+          <div class="hero-content">
+            <div class="hero-badge reveal"><span class="badge-dot"></span>Open to opportunities</div>
+            <h1 class="hero-title reveal">Hi, I am <br><span class="gradient-text text-glow">AAYUSH SAHU</span></h1>
+            <h2 class="hero-subtitle reveal">Aspiring AI &amp; Machine Learning Engineer</h2>
+            <p class="hero-tagline reveal">"Building AI Solutions for Real-World Problems"</p>
+            <div class="hero-actions reveal">
+              <a href="assets/resume.pdf" download="Aayush_Sahu_Resume.pdf" class="btn-primary">
+                <span class="icon" data-icon="download"></span>Download Resume
+              </a>
+              <a href="#contact" class="btn-secondary">
+                <span class="icon" data-icon="mail"></span>Get in Touch
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-image-container reveal">
+            <div class="glass-card hero-image-card">
+              <div class="profile-img-wrapper">
+                <img src="assets/profile.png" alt="Aayush Sahu Profile" class="profile-img" />
+              </div>
+              <div class="card-overlay-glow"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="scroll-indicator">
+          <a href="#about" aria-label="Scroll Down"><span class="icon scroll-arrow" data-icon="arrow-down"></span></a>
+        </div>
+      </section>
+
+      <section id="about" class="about-section">
+        <div class="mesh-glow about-glow"></div>
+        <div class="section-header reveal">
+          <h2 class="section-title"><span class="gradient-text">About Me</span></h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text-column glass-card reveal">
+            <h3>My Story</h3>
+            <p class="main-about-text">Aspiring AI and Data Science enthusiast passionate about Machine Learning and solving real-world problems. I enjoy continuous learning, taking on challenges, exploring new places, and riding through nature-filled landscapes. With a self-driven mindset and commitment to growth, I aim to build innovative AI solutions that create meaningful impact.</p>
+            <div class="about-highlights">
+              <div class="highlight-item"><span class="highlight-number">1+</span><span class="highlight-label">Years Learning</span></div>
+              <div class="highlight-item"><span class="highlight-number">10+</span><span class="highlight-label">AI Tools Explored</span></div>
+              <div class="highlight-item"><span class="highlight-number">100%</span><span class="highlight-label">Commitment</span></div>
+            </div>
+          </div>
+
+          <div class="about-cards-column">
+            <div class="glass-card about-info-card reveal">
+              <div class="card-icon-wrapper cyan-glow"><span class="icon" data-icon="cpu"></span></div>
+              <div class="card-info-content"><h4>AI &amp; Machine Learning</h4><p>Passionate about data patterns, statistical models, and building intelligent software pipelines that automate tasks.</p></div>
+            </div>
+            <div class="glass-card about-info-card reveal">
+              <div class="card-icon-wrapper purple-glow"><span class="icon" data-icon="graduation"></span></div>
+              <div class="card-info-content"><h4>Continuous Learning</h4><p>Highly self-driven. I proactively study fresh frameworks, tools, and methodologies to remain on the cutting edge of AI.</p></div>
+            </div>
+            <div class="glass-card about-info-card reveal">
+              <div class="card-icon-wrapper blue-glow"><span class="icon" data-icon="compass"></span></div>
+              <div class="card-info-content"><h4>Outdoors &amp; Exploration</h4><p>When not coding, you can find me riding through scenic, nature-filled landscapes or exploring new places to recharge.</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="skills-section">
+        <div class="mesh-glow skills-glow"></div>
+        <div class="section-header reveal">
+          <h2 class="section-title"><span class="gradient-text">Skills &amp; Toolset</span></h2>
+          <div class="title-underline"></div>
+        </div>
+        <div class="category-tabs reveal" id="skill-tabs"></div>
+        <div class="skills-grid" id="skills-grid"></div>
+      </section>
+
+      <section id="projects" class="projects-section">
+        <div class="mesh-glow projects-glow"></div>
+        <div class="section-header reveal">
+          <h2 class="section-title"><span class="gradient-text">Featured Work</span></h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="projects-container">
+          <div class="glass-card project-flagship reveal">
+            <div class="project-info">
+              <div class="project-badge"><span class="icon small" data-icon="cpu"></span>Machine Learning Project</div>
+              <h3 class="project-title">Salary Predictor</h3>
+              <p class="project-desc">An intelligent machine learning web application that predicts potential salaries based on professional profiles. By analyzing skills, experience, and industry parameters, it provides accurate data-driven forecasts.</p>
+              <div class="tech-stack-tags">
+                <span>Random Forest</span><span>Regression</span><span>Scikit-Learn</span><span>Python</span><span>Flask</span><span>NumPy</span>
+              </div>
+              <div class="project-features">
+                <h4>Key Features:</h4>
+                <ul>
+                  <li><span class="icon feature-icon" data-icon="check"></span>Real-time salary predictions based on user data</li>
+                  <li><span class="icon feature-icon" data-icon="check"></span>Multi-variable input analysis (Skills, Experience years)</li>
+                  <li><span class="icon feature-icon" data-icon="check"></span>Responsive, minimalist web interface for input collection</li>
+                  <li><span class="icon feature-icon" data-icon="check"></span>Model training using Random Forest Regression for robust accuracy</li>
+                </ul>
+              </div>
+              <div class="project-links">
+                <a href="https://salary-predictor-kgho.onrender.com/" target="_blank" rel="noopener noreferrer" class="btn-primary"><span class="icon" data-icon="external"></span>Live Demo</a>
+                <a href="https://github.com/aayush-x-ai" target="_blank" rel="noopener noreferrer" class="btn-secondary"><span class="icon" data-icon="github"></span>Source Code</a>
+              </div>
+            </div>
+
+            <div class="project-visual">
+              <div class="carousel-wrapper">
+                <div class="carousel-images" id="carousel-images">
+                  <img src="assets/project_salary/screenshot1.png" alt="Salary Predictor Screenshot 1" class="carousel-img">
+                  <img src="assets/project_salary/screenshot2.png" alt="Salary Predictor Screenshot 2" class="carousel-img">
+                  <img src="assets/project_salary/screenshot3.png" alt="Salary Predictor Screenshot 3" class="carousel-img">
+                  <img src="assets/project_salary/screenshot4.png" alt="Salary Predictor Screenshot 4" class="carousel-img">
+                </div>
+                <button class="carousel-control prev" type="button" aria-label="Previous image"><span class="icon" data-icon="chevron-left"></span></button>
+                <button class="carousel-control next" type="button" aria-label="Next image"><span class="icon" data-icon="chevron-right"></span></button>
+                <div class="carousel-dots" id="carousel-dots" aria-label="Carousel slides"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-card project-placeholder reveal">
+            <div class="placeholder-content">
+              <div class="pulsing-grid"><span class="grid-dot"></span><span class="grid-dot"></span><span class="grid-dot"></span></div>
+              <h3>Future Innovations</h3>
+              <p>I am currently architecting and training new Machine Learning and Deep Learning models. More projects will appear here very soon!</p>
+              <div class="loading-bar"><div class="loading-fill"></div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="timeline" class="timeline-section">
+        <div class="mesh-glow timeline-glow"></div>
+        <div class="section-header reveal">
+          <h2 class="section-title"><span class="gradient-text">Journey &amp; Achievements</span></h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="timeline-container">
+          <div class="timeline-line"></div>
+          <article class="timeline-item reveal">
+            <div class="timeline-dot cyan-dot"><span class="icon" data-icon="search"></span></div>
+            <div class="glass-card timeline-card">
+              <div class="timeline-card-header"><span class="event-date"><span class="icon tiny" data-icon="calendar"></span>Present</span><span class="active-badge">ACTIVE SEARCH</span></div>
+              <h3 class="event-title">Looking for Internship</h3>
+              <h4 class="event-subtitle cyan-text">AI / Machine Learning Intern</h4>
+              <span class="event-org">Open to Work</span>
+              <p class="event-desc">Actively searching for internships or training programs where I can apply my Python, Machine Learning, and data analysis skills to build real-world products.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="timeline-dot purple-dot"><span class="icon" data-icon="award"></span></div>
+            <div class="glass-card timeline-card">
+              <div class="timeline-card-header"><span class="event-date"><span class="icon tiny" data-icon="calendar"></span>2025</span></div>
+              <h3 class="event-title">30+ AI Tools Mastery Certificate</h3>
+              <h4 class="event-subtitle purple-text">Dhruv Rathee Academy</h4>
+              <span class="event-org">Online Academy</span>
+              <p class="event-desc">Comprehensive certification program covering prompts, workflow automation, generative AI tools, LLMs, and integrating AI inside modern professional workflows.</p>
+              <div class="event-link-wrapper"><a href="assets/ai_tools_cert.pdf" target="_blank" rel="noopener noreferrer" class="btn-secondary event-link-btn"><span class="icon" data-icon="file"></span>View Certificate</a></div>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="timeline-dot cyan-dot"><span class="icon" data-icon="award"></span></div>
+            <div class="glass-card timeline-card">
+              <div class="timeline-card-header"><span class="event-date"><span class="icon tiny" data-icon="calendar"></span>2025</span></div>
+              <h3 class="event-title">Artificial Intelligence &amp; Machine Learning Training</h3>
+              <h4 class="event-subtitle cyan-text">Certificate of Completion</h4>
+              <span class="event-org">Training Program</span>
+              <p class="event-desc">Completed structured training in artificial intelligence and machine learning concepts, strengthening the foundation for applied ML projects.</p>
+              <div class="event-link-wrapper"><a href="assets/aiml_training_cert.pdf" target="_blank" rel="noopener noreferrer" class="btn-secondary event-link-btn"><span class="icon" data-icon="file"></span>View Certificate</a></div>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="timeline-dot blue-dot"><span class="icon" data-icon="graduation"></span></div>
+            <div class="glass-card timeline-card">
+              <div class="timeline-card-header"><span class="event-date"><span class="icon tiny" data-icon="calendar"></span>2024 - 2028</span></div>
+              <h3 class="event-title">Bachelor of Technology (B.Tech)</h3>
+              <h4 class="event-subtitle blue-text">Undergraduate Student</h4>
+              <span class="event-org">RGPV (Rajiv Gandhi Proudyogiki Vishwavidyalaya)</span>
+              <p class="event-desc">Pursuing my engineering degree, focusing on computing foundations, programming paradigms, mathematical bases for ML, and core engineering principles.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <div class="mesh-glow contact-glow"></div>
+        <div class="section-header reveal">
+          <h2 class="section-title"><span class="gradient-text">Let's Connect</span></h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info-col reveal">
+            <h3>Let's collaborate on the next big AI solution</h3>
+            <p class="contact-intro">Whether you have an internship opportunity, a project collaboration idea, or just want to talk about data science and machine learning, feel free to reach out!</p>
+            <div class="contact-details">
+              <button class="glass-card detail-card" id="copy-email" type="button">
+                <span class="detail-icon cyan"><span class="icon" data-icon="mail"></span></span>
+                <span class="detail-text"><span class="detail-label">Email Me</span><span class="detail-val">aayushsahu9981@gmail.com</span></span>
+                <span class="copy-btn"><span class="icon" data-icon="copy"></span></span>
+              </button>
+              <div class="glass-card detail-card">
+                <span class="detail-icon purple"><span class="icon" data-icon="map-pin"></span></span>
+                <span class="detail-text"><span class="detail-label">Location</span><span class="detail-val">Indore, India</span><span class="coord-text">22.7196° N, 75.8577° E</span></span>
+              </div>
+            </div>
+            <div class="social-links-container">
+              <h4>Find me on:</h4>
+              <div class="social-buttons">
+                <a href="https://github.com/aayush-x-ai" target="_blank" rel="noopener noreferrer" class="btn-secondary social-btn github"><span class="icon" data-icon="github"></span>GitHub</a>
+                <a href="https://www.linkedin.com/in/aayush-sahu-95b142368" target="_blank" rel="noopener noreferrer" class="btn-secondary social-btn linkedin"><span class="icon" data-icon="linkedin"></span>LinkedIn</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-accent-col reveal">
+            <div class="glass-card map-glow-card">
+              <div class="radar-circle"><span class="radar-ping"></span></div>
+              <div class="coordinates-display">
+                <span class="coord-title">CENTRAL COORDINATE</span>
+                <span class="coord-numbers">LAT: 22.7196° N</span>
+                <span class="coord-numbers">LON: 75.8577° E</span>
+                <span class="loc-name">INDORE, MP, INDIA</span>
+              </div>
+              <div class="map-grid-overlay"></div>
+            </div>
+          </div>
+        </div>
+
+        <footer class="footer">
+          <p>© <span id="year"></span> Aayush Sahu. Crafted with HTML, CSS, JS, and Canvas.</p>
+        </footer>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
